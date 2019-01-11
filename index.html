@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Find the Penguins</title>
+    <meta charset="utf-8">
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="gameholder">
+        <div id="title"></div>
+        <div id="score"> Score </div>
+        <div id="highscore"> highscore </div>
+        <div id="shuffle">
+            <div id="penguin1" class="penguin" onclick="scorefun()"> <img id="p1" class="peng" value="p1" src="images/penguin_1.png" /> </div>
+            <div id="penguin2" class="penguin" onclick="scorefun1()"> <img id="p2" class="peng" value="p2" src="images/penguin_2.png" /></div>
+            <div id="penguin3" class="penguin" onclick="scorefun2()"><img id="p3" class="peng" value="p3" src="images/penguin_3.png" /></div>
+            <div id="penguin4" class="penguin" onclick="scorefun3()"><img id="p4" class="peng" value="p4" src="images/penguin_4.png" /></div>
+            <div id="penguin5" class="penguin" onclick="scorefun4()"><img id="p5" class="peng" value="p5" src="images/penguin_5.png" /></div>
+            <div id="penguin6" class="penguin" onclick="scorefun5()"><img id="p6" class="peng" value="p6" src="images/penguin_6.png" /></div>
+            <div id="penguin7" class="penguin" onclick="scorefun6()"><img id="p7" class="peng" value="p7" src="images/penguin_7.png" /></div>
+            <div id="penguin8" class="penguin" onclick="scorefun7()"><img id="p8" class="peng" value="p8" style="visibility:hidden" src="images/penguin_8.png" /></div>
+            <div id="penguin9" class="penguin" onclick="scorefun8()"><img id="p9" class="peng" value="p9" src="images/penguin_1.png" /></div>
+            <div id="yeti" class="yeti" onclick="gameover()" data-toggle="modal" data-target="#myModal"><img id="y1" class="peng" value="y1" src="images/yeti.png" /> </div>
+            <div id="penguin10" class="penguin" onclick="scorefun9()"><img id="p10" class="peng" value="p10" src="images/penguin_2.png" /></div>
+            <div id="penguin11" class="penguin" onclick="scorefun10()"><img id="p11" class="peng" value="p11" src="images/penguin_5.png" /></div>
+            <div id="penguin12" class="penguin" onclick="scorefun11()"><img id="p12" class="peng" value="p12" src="images/penguin_8.png" /></div>
+            <div id="penguin13" class="penguin" onclick="scorefun12()"><img id="p13" class="peng" value="p13" src="images/penguin_4.png" /></div>
+            <div id="penguin14" class="penguin" onclick="scorefun13()"><img id="p14" class="peng" value="p14" src="images/penguin_8.png" /></div>
+        </div>
+
+        <audio src="audio/audio.mp3" id="audio"></audio>
+        <audio src="audio/audio1.mp3" id="audio1"></audio>
+
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" onclick="newgame()">&times;</button>
+                            <h4 class="modal-title">Game Over</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p id="displayscore"> </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary center-block" data-dismiss="modal" onclick="newgame()">New Game</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
